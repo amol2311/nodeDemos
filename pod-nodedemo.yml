@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: node.demo
+ labels:
+   app: nodeDemo
+spec:
+ containers:
+  - name: node-demo
+    image: amoltemkar/node-demo
+    ports:
+     - containerPort: 3000
